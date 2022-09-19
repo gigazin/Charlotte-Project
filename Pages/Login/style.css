@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(252.44deg, #294369 0%, #0B0D22 100%);
+}
+
+/* Main page content */
+.parentDiv {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+.projectLogo {
+    padding-right: 370px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 260px;
+    border-right: solid 1px #FDE3D5;
+}
+
+.projectTitle {
+    font-family: 'Great Vibes', serif;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 300%;
+    
+    transition: all 1s;
+}
+
+.projectTitle:hover {
+    color: #FDE3D5;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+}
+
+.loginText {
+    padding-right: 5px;
+    font-family: 'Glory', serif;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 300%;
+}
+
+.footer {
+    margin-top: 5.3%;
+    text-align: center;
+    padding: 3px;
+}
+
+.loginSideBar {
+    padding-right: 30px;
+}
+
+.sideBar {
+    margin-top: 15px;
+    width: 487px;
+    color: #FDE3D5;
+    background-color: #FDE3D5;
+}
+
+.footerText {
+    margin-top: 5%;
+    font-family: 'Glory', serif;
+    font-style: italic;
+    color: white;
+    font-weight: 200;
+    font-size: 140%;
+    position: bottom;
+}
+/* Main page content */
