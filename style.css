@@ -40,6 +40,7 @@ body {
 .parentLoginDiv {
     flex-wrap: wrap;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .login {
@@ -47,6 +48,7 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 50px;
+    padding-bottom: 0px;
 }
 
 .loginText {
@@ -87,16 +89,90 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 28px;
 }
 
-.usernameText {
+.inputText {
     font-family: 'Glory', serif;
     color: white;
     font-weight: 300;
     font-style: italic;
     font-size: 32px;
     text-align: center;
-    margin-top: 34px;
+}
+
+.inputBox {
+    font-family: 'Glory', serif;
+    font-size: 18px;
+    font-style: bold;
+    font-weight: 500;
+    color: #FDE3D5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    height: 40px;
+    width: 255px;
+    border-radius: 50px;
+    background-color: #12163b7e;
+}
+
+.inputBox::placeholder {
+    font-family: 'Glory', serif;
+    font-style: italic;
+    color: #FDE3D5;
+}
+
+.passwordInput {
+    padding: 5px;
+}
+
+.signIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+}
+
+.signInText {
+    font-family: 'Glory', serif;
+    color: #FDE3D5;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    font-size: 28px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.signInText:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1.05px #FDE3D5;
+    transform: scaleX(0);
+    transition: 1s;
+}
+
+.signInText:hover:after {
+    transform: scaleX(1);
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.registerText {
+    font-family: 'Glory', serif;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#registerSpan {
+    font-weight: 700;
+    font-style: bold;
 }
 /* Main page content */
 
