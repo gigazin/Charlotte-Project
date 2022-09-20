@@ -1,9 +1,12 @@
+@import url(reset.css);
+
 body {
     background: linear-gradient(252.44deg, #294369 0%, #0B0D22 100%);
 }
 
 /* Main page content */
 .parentDiv {
+    flex-wrap: wrap;
     margin-top: 10%;
     display: flex;
     flex-direction: row;
@@ -34,6 +37,11 @@ body {
     color: #FDE3D5;
 }
 
+.parentLoginDiv {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .login {
     display: flex;
     flex-direction: row;
@@ -52,14 +60,8 @@ body {
     font-weight:bold;
 }
 
-.footer {
-    margin: 1% ;
-    text-align: center;
-    padding: 3px;
-}
-
 .loginSideBar {
-    padding-right: 30px;
+    margin-left: 4px;
 }
 
 .sideBar {
@@ -67,6 +69,42 @@ body {
     width: 487px;
     color: #FDE3D5;
     background-color: #FDE3D5;
+    border-color: #FDE3D5;
+}
+
+.loginUserInputArea {
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.usernameInput {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.usernameText {
+    font-family: 'Glory', serif;
+    color: white;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 34px;
+}
+/* Main page content */
+
+/* Page footer */
+.footer {
+    margin: 1% ;
+    text-align: center;
+    padding: 3px;
 }
 
 .footerText {
@@ -78,4 +116,4 @@ body {
     font-size: 140%;
     position: bottom;
 }
-/* Main page content */
+/* Page footer */
