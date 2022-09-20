@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Charlotte</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&family=Great+Vibes&family=Raleway:wght@100&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="parentDiv">
-        <!-- Project logo -->
-        <div class="projectLogo">
-        <h1 class="projectTitle">Projeto Charlotte</h1>
-        </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glory:wght@100&family=Great+Vibes&family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper">
+        <!-- Project logo -->
+        <div class="parentLogoDiv">
+          <div class="projectLogo">
+            <h1 class="projectTitle">Projeto Charlotte</h1>
+          </div>
+        </div>
+        <!-- <div class="centerLine"></div> -->
         <!-- Login area -->
         <div class="parentLoginDiv">
-            <div class="login">
-                <h2 class="loginText"><strong>Login</strong></h2>
-                <div class="loginSideBar">
-                    <hr class="sideBar" />
-                </div>
+          <div class="login">
+            <h2 class="loginText"><strong>Login</strong></h2>
+            <div class="loginSideBar">
+              <hr class="sideBar" />
             </div>
-            <div class="loginUserInputArea">
-                <div class="usernameInput"><h3 class="inputText">Usuário / E-mail</h3></div>
-                <form>
-                    <input type="text" name="username" placeholder="Insira seu nome de usuário..." class="inputBox" />
-                </form>
-                <div class="passwordInput>"><h3 class="inputText">Senha</h3></div>
-                <form>
-                    <input type="password" name="password" placeholder="Insira sua senha..." class="inputBox" />
-                </form>
+          </div>
+          <div class="loginUserInputArea">
+            <div class="usernameInput">
+              <h3 class="inputText">Usuário / E-mail</h3>
             </div>
-            <div class="signIn">
-                <h2 class="signInText"><strong>E  n  t  r  a  r</strong></h2>
-            </div>
-            <div class="register">
-                <h3 class="registerText">Não possui conta? <span id="registerSpan"><strong>Registre-se</strong></span></h3>
-            </div>
+            <form>
+              <input
+                type="text"
+                name="username"
+                placeholder="Insira seu nome de usuário..."
+                class="inputBox"
+              />
+            </form>
+            <div class="passwordInput>"><h3 class="inputText">Senha</h3></div>
+            <form>
+              <input
+                type="password"
+                name="password"
+                placeholder="Insira sua senha..."
+                class="inputBox"
+              />
+            </form>
+          </div>
+          <div class="signIn">
+            <h2 class="signInText"><strong>E n t r a r</strong></h2>
+          </div>
+          <div class="register">
+            <h3 class="registerText">
+              Não possui conta?
+              <span id="registerSpan"><strong>Registre-se</strong></span>
+            </h3>
+          </div>
         </div>
-    </div>
-        
+      </div>
     </div>
 
+    <div class="wrapEmptySpace"></div>
+
     <!-- Footer -->
-    <div class="footer">
+    <footer class="pageFooter">
+      <div class="pageFooterDiv">
         <h2 class="footerText">Projeto Charlotte. 2022.</h2>
-    </div>
-</body>
-<!-- Script -->
-<script src="./script.js"></script>
+      </div>
+    </footer>
+  </body>
+
+  <!-- Script -->
+  <script src="./script.js"></script>
 </html>
