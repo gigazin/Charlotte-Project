@@ -1,7 +1,13 @@
 @import url(reset.css);
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(252.44deg, #294369 0%, #0B0D22 100%);
+    width: 100%;
+    height: 100%;
 }
 
 /* Main page content */
@@ -226,3 +232,126 @@ body {
     font-size: 140%;
 }
 /* Page footer */
+
+/* Large devices */
+@media (min-width: 900px) {
+    .parentDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .parentLoginDiv {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .parentLogoDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/* Medium devices */
+@media (max-width: 768px) {
+    .parentDiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .parentLogoDiv {
+        display: flex;
+        max-width: 300px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 50px;
+    }
+
+    .wrapEmptySpace {
+        flex-grow: 1;
+        padding: 100px;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 600) {
+
+}
+
+/* Small devices */
+@media (max-width: 600px) {
+
+    .parentDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+        width: 10%;
+    }
+
+    .wrapper {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .parentLogoDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .projectTitle {
+        text-align: center;
+        font-size: 2.8rem;
+    }
+
+    .parentLoginDiv {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .loginText {
+        font-size: 2.5rem;
+    }
+
+    .sideBar {
+        width: 160px;
+    }
+
+    .wrapEmptySpace {
+        flex-grow: 1;
+        padding: 90px;
+    }
+
+    .pageFooter {
+        min-height: 100px;
+        margin-top: auto;
+        padding-bottom: 16.3px;
+    }
+}
