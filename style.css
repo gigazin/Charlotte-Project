@@ -234,7 +234,17 @@ body {
 /* Page footer */
 
 /* Large devices */
-@media (min-width: 900px) {
+@media (min-width: 1500px) {
+    
+}
+
+@media (max-width: 1500px) {
+    .wrapper {
+        gap: 200px;
+    }
+}
+
+@media (min-width: 1000px) {
     .parentDiv {
         display: flex;
         flex-direction: row;
@@ -267,7 +277,15 @@ body {
     }
 }
 
+@media (max-width: 1000px) {
+
+}
+
 /* Medium devices */
+@media (min-width: 768px) {
+
+}
+
 @media (max-width: 768px) {
     .parentDiv {
         display: flex;
@@ -295,7 +313,6 @@ body {
     }
 }
 
-/* Medium devices */
 @media (min-width: 600) {
 
 }
