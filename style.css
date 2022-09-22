@@ -9,6 +9,25 @@ html {
 body {
     background: linear-gradient(252.44deg, #294369 0%, #0B0D22 100%);
     min-height: 100%;
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #29436900;
+    margin-block: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0b0d2238;
+    border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0b0d2279;
 }
 
 /* Main page content */
