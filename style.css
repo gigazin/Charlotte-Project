@@ -12,7 +12,6 @@ body {
 }
 
 /* Main page content */
-
 .pageHeader {
     margin: 0 auto;
     padding: 0px;
@@ -246,17 +245,7 @@ body {
 /* Page footer */
 
 /* Large devices */
-@media (min-width: 1500px) {
-    
-}
-
 @media (max-width: 1500px) {
-    .wrapper {
-        gap: 200px;
-    }
-}
-
-@media (min-width: 1000px) {
     .parentDiv {
         display: flex;
         flex-direction: row;
@@ -271,6 +260,7 @@ body {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        gap: 100px;
     }
 
     .parentLoginDiv {
@@ -287,17 +277,51 @@ body {
         justify-content: space-around;
         align-items: center;
     }
+    
 }
 
 @media (max-width: 1000px) {
+    .parentDiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 100px;
+    }
+
+    .parentLogoDiv {
+        text-align: center;
+        display: flex;
+        max-width: 300px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .projectLogo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .projectTitle {
+        display: flex;
+        text-align: center;
+    }
 
 }
 
 /* Medium devices */
-@media (min-width: 768px) {
-
-}
-
 @media (max-width: 768px) {
     .parentDiv {
         display: flex;
@@ -323,10 +347,6 @@ body {
         flex-grow: 1;
         padding: 100px;
     }
-}
-
-@media (min-width: 600) {
-
 }
 
 /* Small devices */
