@@ -52,6 +52,7 @@ body {
     align-items: center;
     justify-content: space-around;
     gap: 3.1%;
+    box-sizing:border-box;
 }
 
 .wrapper {
@@ -69,6 +70,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .projectTitle {
@@ -78,6 +80,7 @@ body {
     font-weight: 400;
     font-size: 300%; 
     transition: all 1s;
+    
 }
 
 .projectTitle:hover {
@@ -233,8 +236,9 @@ body {
 /* Main page content */
 
 .wrapEmptySpace {
-    padding: 5%;
+    padding: 3.5%;
     flex-grow: 1;
+    
 }
 
 /* Page footer */
@@ -244,6 +248,7 @@ body {
     justify-content: space-around;
     text-align: center;
     bottom: 0px;
+    
 }
 
 .pageFooterDiv {
