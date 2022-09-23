@@ -161,15 +161,15 @@ body {
 }
 
 .inputBox {
+    border: 0;
     font-family: 'Glory', serif;
     font-size: 18px;
     font-style: bold;
     font-weight: 500;
-    color: #FDE3D5;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 8px;
-    height: 40px;
+    height: 30px;
     width: 255px;
     border-radius: 50px;
     background-color: #12163b7e;
@@ -192,6 +192,11 @@ body {
     margin-top: 17px;
 }
 
+.signInButton {
+    background-color: transparent;
+    border: 0;
+}
+
 .signInText {
     font-family: 'Glory', serif;
     color: #FDE3D5;
@@ -201,6 +206,11 @@ body {
     font-size: 28px;
     padding-right: 5px;
     padding-left: 5px;
+    transition: 1s;
+}
+
+.signInText:hover {
+    color: #f18c51;
 }
 
 .signInText:after {
@@ -213,6 +223,7 @@ body {
 
 .signInText:hover:after {
     transform: scaleX(1);
+    border-color: #f18c51;
 }
 
 .register {
