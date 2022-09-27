@@ -195,6 +195,8 @@ body {
 .signInButton {
     background-color: transparent;
     border: 0;
+    padding: 0;
+    cursor: pointer;
 }
 
 .signInText {
@@ -243,7 +245,33 @@ body {
 #registerSpan {
     font-weight: 700;
     font-style: bold;
+    transition: 1s;
 }
+
+#registerSpan:hover {
+    color: #f18c51;
+}
+
+.registerButton {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Register overlay div */
+.parentRegisterDiv {
+    background-color: white;
+    display: none;
+    padding: 400px 300px 400px 300px;
+    position: absolute;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 400px;
+    margin-top: 530px;
+    border-radius: 75px;
+}
+
 /* Main page content */
 
 .wrapEmptySpace {

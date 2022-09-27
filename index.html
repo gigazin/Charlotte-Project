@@ -25,7 +25,7 @@
     </header>
 
     <main class="parentDiv">
-      <div class="wrapper">
+      <div class="wrapper" id="mainWrapperDiv">
         <!-- Project logo -->
         <div class="parentLogoDiv">
           <div class="projectLogo">
@@ -71,11 +71,21 @@
           <div class="register">
             <h3 class="registerText">
               Não possui conta?
-              <span id="registerSpan"><strong>Registre-se</strong></span>
+              <button
+                class="registerButton"
+                type="button"
+                onclick="showRegisterDiv()"
+              >
+                <span class="registerText" id="registerSpan"
+                  ><strong>Registre-se</strong></span
+                >
+              </button>
             </h3>
           </div>
         </div>
       </div>
+
+      <div class="parentRegisterDiv" id="registerDiv"></div>
     </main>
 
     <div class="wrapEmptySpace"></div>
