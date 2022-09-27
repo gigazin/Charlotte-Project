@@ -17,6 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=Glory:wght@100&family=Great+Vibes&family=Raleway:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Glory:wght@300;500;700&display=swap"
+      rel="stylesheet">
   </head>
 
   <body>
@@ -85,10 +88,21 @@
         </div>
       </div>
 
-      <div class="parentRegisterDiv" id="registerDiv"></div>
+      <div class="parentRegisterDiv" id="registerDiv">
+        <div class="registerWrapper" id="registerWrapperDiv">
+          <button class="closeModal" id="closeModalButton" type="button" onclick="hideRegisterDiv()">
+            <h2 class="closeModalText"><strong>Cancelar</strong></h2>
+          </button>
+          <div class="registerDataFields">
+            <h3 class="registerInputText">Primeiro nome</h3>
+          </div>
+        </div>
+      </div>
     </main>
 
     <div class="wrapEmptySpace"></div>
+
+    <!-- Page footer removed due to design inconsistency. -->
 
     <!-- Footer -->
     <!--
