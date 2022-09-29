@@ -90,12 +90,98 @@
 
       <div class="parentRegisterDiv" id="registerDiv">
         <div class="registerWrapper" id="registerWrapperDiv">
+          <div class="registerLeftColumn">
+            <div class="registerInputArea">
+              <h3 class="registerInputText">Primeiro nome</h3>
+              <form>
+                <input 
+                  type="text" 
+                  name="firstName" 
+                  placeholder="Informe seu nome..."
+                  class="inputRegisterBox">
+              </form>
+            </div>
+            <div class="registerInputArea">
+              <h3 class="registerInputText">Nome de usuário</h3>
+              <form>
+                <input 
+                  type="text" 
+                  name="userName" 
+                  placeholder="Nome um nome..." 
+                  class="inputRegisterBox">
+                </form>
+            </div>
+            <div class="registerInputArea">
+              <h3 class="registerInputText">Senha</h3>
+              <form>
+                <input 
+                type="password"
+                name="userPassword"
+                placeholder="Informe sua senha..."
+                class="inputRegisterBox">
+              </form>
+            </div>
+            <div class="registerInputArea">
+              <h3 class="registerInputText">Cidade</h3>
+              <form>
+                <input
+                type="text"
+                name="userCity"
+                placeholder="Informe sua cidade..."
+                class="inputRegisterBox">
+              </form>
+            </div>
+          </div>
+          <div class="registerRightColumn">
+            <div class="registerInputArea">
+              <h3 class="registerInputText">Último nome</h3>
+              <form>
+                <input 
+                  type="text" 
+                  name="lastName" 
+                  placeholder="Informe seu sobrenome..." 
+                  class="inputRegisterBox">
+              </form>
+            </div>
+            <div class="registerInputArea">
+              <h3 class="registerInputText">E-mail</h3>
+              <form>
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Informe seu e-mail..."
+                  class="inputRegisterBox">
+              </form>
+            </div>
+            <div class="registerInputArea">
+              <h3 class="registerInputText">Confirmar senha</h3>
+              <form>
+                <input 
+                type="password"
+                name="userPasswordConfirm"
+                placeholder="Confirme sua senha..."
+                class="inputRegisterBox">
+              </form>
+            </div>
+            <div class="registerInputArea">
+              <h3 class="registerInputText">Estado</h3>
+              <form>
+                <input 
+                type="text"
+                name="userState"
+                placeholder="Informe seu estado..."
+                class="inputRegisterBox">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="registerDivButtons">
           <button class="closeModal" id="closeModalButton" type="button" onclick="hideRegisterDiv()">
             <h2 class="closeModalText"><strong>Cancelar</strong></h2>
           </button>
-          <div class="registerDataFields">
-            <h3 class="registerInputText">Primeiro nome</h3>
-          </div>
+          <button class="closeModal" id="closeModalButton" type="button" onclick="hideRegisterDiv()">
+            <h2 class="closeModalText"><strong>Registrar</strong></h2>
+          </button>
         </div>
       </div>
     </main>

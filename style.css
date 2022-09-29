@@ -125,11 +125,12 @@ body {
 }
 
 .sideBar {
+    background: #FDE3D5;
     margin-top: 15px;
     width: 487px;
-    color: #FDE3D5;
-    background-color: #FDE3D5;
-    border-color: #FDE3D5;
+    height: 2px;
+    border-radius: 10px;
+    border: 0;
 }
 
 .loginUserInputArea {
@@ -264,7 +265,7 @@ body {
 .parentRegisterDiv {
     background-color: white;
     display: none;
-    padding: 400px 300px 400px 300px;
+    padding: 70px 70px 70px 70px;
     position: absolute;
     flex-wrap: wrap;
     flex-direction: column;
@@ -273,6 +274,7 @@ body {
     margin: 400px;
     margin-top: 530px;
     border-radius: 75px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.164);
 }
 
 .registerWrapper {
@@ -280,7 +282,90 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: right;
+    justify-content: space-around;
+}
+
+.registerLeftColumn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    gap: 30px;
+    margin-right: 70px;
+}
+
+.registerRightColumn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    gap: 30px;
+    margin-left: 70px;
+}
+
+.registerInputArea {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.inputBoxDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 220px;
+}
+
+.registerInputText {
+    font-family: 'Glory', serif;
+    font-weight: 300;
+    font-style: italic;
+    color:  #294369;
+    font-size: 32px;
+    padding-bottom: 5px;
+    transition: 1s;
+}
+
+.registerInputText:hover {
+    color: #478ffc;
+}
+
+.inputRegisterBox {
+    font-family: 'Glory', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    border: 0;
+    border-bottom: solid 2px #294369;
+    transition: 1s;
+}
+
+.inputRegisterBox:focus {
+    outline: none;
+    border-color: #478ffc;
+}
+
+.inputRegisterBox::placeholder {
+    font-family: 'Glory', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    color: #00000070
+}
+
+.registerDivButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
 }
 
 .closeModal {
@@ -300,6 +385,19 @@ body {
 
 .closeModalText:hover {
     color: rgb(24, 116, 253);
+}
+
+.closeModalText:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1.05px #FDE3D5;
+    transform: scaleX(0);
+    transition: 1s;
+}
+
+.closeModalText:hover::after {
+    transform: scaleX(1);
+    border-color: rgb(24, 116, 253);
 }
 
 /* Main page content */
