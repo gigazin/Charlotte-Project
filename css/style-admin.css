@@ -35,7 +35,11 @@ body {
     }
    
 header{
-    margin-top: 10px;
+    margin-top:10px;
+}
+
+hr{
+    margin-top:10px;
 }
 
 .admin-icon {
@@ -66,7 +70,8 @@ header{
 .menuItems{
     margin-left: 20px;
     color:white;
-    font-family: 'Glory', serif;
+    font-family: 'Raleway';
+    font-weight:bold;
     font-size:20px;
 }
 
@@ -90,19 +95,19 @@ header{
 .parentAdminDiv {
     background-color: #D9D9D9;
     padding: 12% 0;
-    width:17%;
-    border-radius: 75px;
+    width:16%;
+    border-radius: 43px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.164);
-    margin-left:10%;
+    margin-left:15%;
     
 }
 
 .parentAdminInfo{
     background-color: #D9D9D9;
     padding: 12% 15% 12% 33%;
-    width:60%;
-    border-radius: 75px;
+    width:50%;
+    border-radius: 43px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.164);
-    margin-right:10%;
+    margin-right:15%;
 
 }
