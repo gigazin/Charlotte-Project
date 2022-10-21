@@ -1,0 +1,101 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0px;
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(252.44deg, #294369 0%, #0B0D22 100%);
+    min-height: 100%;
+    overflow: overlay;
+}
+
+    ::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #29436900;
+        margin-block: 0.3rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #0b0d2238;
+        border-radius: 5rem;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #0b0d2279;
+    }
+   
+header{
+    margin-top: 10px;
+}
+
+.admin-icon {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+}
+  
+.admin-icon img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+
+}
+
+.menuItemsDiv{
+    display:flex;
+}
+
+.menuItems{
+    margin-left: 20px;
+    color:white;
+    font-family: 'Glory', serif;
+    font-size:20px;
+}
+
+.color{
+    text-decoration:none;
+    color:white;
+}
+
+.color:hover{
+    color:#FFCDB1;
+}
+
+
+.parentAdminGod {
+    display:flex;
+    justify-content: space-around;
+    margin-top:9.5%
+
+}
+
+.parentAdminDiv {
+    background-color: #D9D9D9;
+    padding: 12% 0;
+    width:17%;
+    border-radius: 75px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.164);
+    
+}
+
+.parentAdminInfo{
+    background-color: #D9D9D9;
+    padding: 12% 15% 12% 33%;
+    width:20%;
+    border-radius: 75px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.164);
+    
+
+}
