@@ -71,13 +71,18 @@ hr{
     margin-left: 20px;
     color:white;
     font-family: 'Raleway';
-    font-weight:bold;
+    font-weight:400;
     font-size:20px;
 }
 
 .color{
     text-decoration:none;
     color:white;
+    transition: 0.5s;
+}
+
+#profileText {
+    color: #FFCDB1;
 }
 
 .color:hover{
@@ -87,19 +92,59 @@ hr{
 
 .parentAdminGod {
     display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
-    margin-top:9.5%
+    margin-top:9.5%;
+    gap: 46px;
+}
 
+.parentAdminWrapper {
+    width: 353px;
+    height: 565px;
+    position: absolute;
+    background-color: #D9D9D9;
+    z-index: -1;
+    border-radius: 43px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.164);
 }
 
 .parentAdminDiv {
-    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 31px;
     padding: 12% 0;
-    width:16%;
     border-radius: 43px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.164);
     margin-left:15%;
-    
+}
+
+#admin-profile-picture {
+    transition: 0.5s;
+}
+
+#admin-profile-picture:hover {
+    transform: scale(1.1);
+}
+
+.admin-profile-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 235px;
+    height: 38px;
+    background-color: #ABA8A8;
+    box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.25);
+}
+
+#admin-name {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: white;
 }
 
 .parentAdminInfo{
