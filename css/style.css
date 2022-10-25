@@ -263,7 +263,7 @@ body {
 
 /* Register overlay div */
 .parentRegisterDiv {
-    background-color: white;
+    background-color: #00000070;
     display: none;
     padding: 70px 70px 70px 70px;
     position: absolute;
@@ -326,7 +326,7 @@ body {
     font-family: 'Glory', serif;
     font-weight: 300;
     font-style: italic;
-    color:  #294369;
+    color:  #FFFFFF;
     font-size: 32px;
     padding-bottom: 5px;
     transition: 1s;
@@ -339,10 +339,12 @@ body {
 .inputRegisterBox {
     font-family: 'Glory', serif;
     font-weight: 300;
+    color: white;
     font-style: italic;
     font-size: 18px;
     border: 0;
-    border-bottom: solid 2px #294369;
+    background-color: transparent;
+    border-bottom: solid 2px #FFFFFF;
     transition: 1s;
 }
 
@@ -356,7 +358,7 @@ body {
     font-weight: 300;
     font-style: italic;
     font-size: 15px;
-    color: #00000070
+    color: #FFFFFF70
 }
 
 .registerDivButtons {
@@ -379,7 +381,7 @@ body {
     font-family: 'Glory', serif;
     font-size: 25px;
     font-weight: 700px;
-    color: rgb(0, 63, 156);
+    color: #FFFFFF;
     transition: 1s;
 }
 
