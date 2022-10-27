@@ -46,224 +46,28 @@
             </div>
           </div>
           <div class="loginUserInputArea">
-            <div class="usernameInput">
-              <h3 class="inputText">Usuário / E-mail</h3>
-            </div>
-            <form>
+            <form method="post" class="loginForm">
+              <div class="usernameInput">
+                <h3 class="inputText">Usuário / E-mail</h3>
+              </div>
               <input
                 type="text"
-                name="username"
+                name="usuario"
                 placeholder="Insira seu nome de usuário..."
                 class="inputBox"
               />
-            </form>
-            <div class="passwordInput>"><h3 class="inputText">Senha</h3></div>
-            <form>
+              <div class="passwordInput>"><h3 class="inputText">Senha</h3></div>
               <input
                 type="password"
-                name="password"
+                name="senha"
                 placeholder="Insira sua senha..."
                 class="inputBox"
               />
+              <input type="submit" class="signInButton" name="btnLogin" value="E n t r a r">
+              </input>
             </form>
           </div>
-          <div class="signIn">
-            <button class="signInButton" type="button">
-              <h2 class="signInText"><strong>E n t r a r</strong></h2>
-            </button>
-          </div>
-          <div class="register">
-            <h3 class="registerText">
-              Não possui conta?
-              <button
-                class="registerButton"
-                type="button"
-                onclick="showRegisterDiv()"
-              >
-                <span class="registerText" id="registerSpan"
-                  ><strong>Registre-se</strong></span
-                >
-              </button>
-            </h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="parentRegisterDiv" id="registerDiv">
-        <div class="registerWrapper" id="registerWrapperDiv">
-          <!-- Left Column -->
-          <div class="registerLeftColumn">
-            <div class="registerInputArea">
-              <h3 class="registerInputText">Primeiro nome</h3>
-              <form>
-                <input
-                  type="text"
-                  name="firstName"
-                  placeholder="Informe seu nome..."
-                  class="inputRegisterBox"
-                />
-              </form>
-            </div>
-            <div class="registerInputArea">
-              <h3 class="registerInputText">Nome de usuário</h3>
-              <form>
-                <input
-                  type="text"
-                  name="userName"
-                  placeholder="Informe um nome..."
-                  class="inputRegisterBox"
-                />
-              </form>
-            </div>
-            <div class="registerInputArea">
-              <h3 class="registerInputText">Senha</h3>
-              <form>
-                <input
-                  type="password"
-                  name="userPassword"
-                  placeholder="Informe sua senha..."
-                  class="inputRegisterBox"
-                />
-              </form>
-            </div>
-            <div class="registerInputArea">
-              <h3 class="registerInputText">Cidade</h3>
-              <form>
-                <input
-                  type="text"
-                  name="userCity"
-                  placeholder="Informe sua cidade..."
-                  class="inputRegisterBox"
-                />
-              </form>
-            </div>
-            <div class="registerInputArea">
-              <h3 class="registerInputText">Veículo</h3>
-              <form>
-                <input
-                  type="text"
-                  name="userVehicle"
-                  placeholder="Informe o seu veículo..."
-                  class="inputRegisterBox"
-                />
-              </form>
-            </div>
-            <div class="registerInputArea">
-              <h3 class="registerInputText">Celular</h3>
-              <form>
-                <input
-                  type="text"
-                  name="userPhoneNumber"
-                  placeholder="Informe seu número..."
-                  class="inputRegisterBox"
-                />
-              </form>
-            </div>
-          </div>
-
-          <!-- Right Column -->
-          <div class="registerRightColumn">
-            <div class="registerInputArea">
-              <h3 class="registerInputText">Último nome</h3>
-              <form>
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Informe seu sobrenome..."
-                  class="inputRegisterBox"
-                />
-              </form>
-            </div>
-            <div class="registerInputArea">
-              <h3 class="registerInputText">E-mail</h3>
-              <form>
-                <input
-                  type="text"
-                  name="email"
-                  placeholder="Informe seu e-mail..."
-                  class="inputRegisterBox"
-                />
-              </form>
-            </div>
-            <div class="registerInputArea">
-              <h3 class="registerInputText">Confirmar senha</h3>
-              <form>
-                <input
-                  type="password"
-                  name="userPasswordConfirm"
-                  placeholder="Confirme sua senha..."
-                  class="inputRegisterBox"
-                />
-              </form>
-            </div>
-            <div class="registerInputArea">
-              <h3 class="registerInputText">Estado</h3>
-              <form>
-                <input
-                  type="text"
-                  name="userState"
-                  placeholder="Informe seu estado..."
-                  class="inputRegisterBox"
-                />
-              </form>
-            </div>
-            <div class="registerInputArea">
-              <h3 class="registerInputText">CPF</h3>
-              <form>
-                <input
-                  type="text"
-                  name="userCPF"
-                  placeholder="Informe o seu CPF..."
-                  class="inputRegisterBox"
-                />
-              </form>
-            </div>
-            <div class="registerInputArea">
-              <h3 class="registerInputText">Turno</h3>
-              <form>
-                <input
-                  type="text"
-                  name="userShift"
-                  placeholder="Informe o seu turno..."
-                  class="inputRegisterBox"
-                />
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="registerDivButtons">
-          <button
-            class="closeModal"
-            id="closeModalButton"
-            type="button"
-            onclick="hideRegisterDiv()"
-          >
-            <h2 class="closeModalText"><strong>Cancelar</strong></h2>
-          </button>
-          <button
-            class="closeModal"
-            id="closeModalButton"
-            type="button"
-            onclick="hideRegisterDiv()"
-          >
-            <h2 class="closeModalText"><strong>Registrar</strong></h2>
-          </button>
-        </div>
-      </div>
     </main>
-
-    <div class="wrapEmptySpace"></div>
-
-    <!-- Page footer removed due to design inconsistency. -->
-
-    <!-- Footer -->
-    <!--
-    <footer class="pageFooter">
-      <div class="pageFooterDiv">
-        <h2 class="footerText">Projeto Charlotte. 2022.</h2>
-      </div>
-    </footer>
-    -->
   </body>
 
   <!-- Script -->
