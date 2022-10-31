@@ -13,7 +13,7 @@ html {
 body {
     background: linear-gradient(252.44deg, #294369 0%, #0B0D22 100%);
     min-height: 100%;
-    overflow: overlay;
+    overflow: hidden;
 }
 
     ::-webkit-scrollbar {
@@ -40,6 +40,18 @@ header{
 
 hr{
     margin-top:10px;
+}
+
+.content-divider {
+    background-color: #FDE3D5;
+    width: 175px;
+    height: 1.5px;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+.admin-profile-info:hover .content-divider {
+    width: 230px;
 }
 
 .admin-icon {
@@ -92,19 +104,19 @@ hr{
 
 .parentAdminGod {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    margin-top:9.5%;
+    justify-content: center;
+    margin: 0 auto;
     gap: 46px;
 }
 
 .parentAdminWrapper {
-    width: 353px;
-    height: 565px;
+    width: 600px;
+    height: 700px;
     position: absolute;
-    background-color: #D9D9D9;
+    background-color: #1D1D1D50;
     z-index: -1;
     border-radius: 43px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.164);
@@ -116,12 +128,22 @@ hr{
     align-items: center;
     justify-content: center;
     gap: 31px;
-    padding: 12% 0;
+    margin-top: 8%;
     border-radius: 43px;
-    margin-left:15%;
+}
+
+.admin-icon-profile {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
 }
 
 #admin-profile-picture {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
     transition: 0.5s;
 }
 
@@ -137,22 +159,79 @@ hr{
     border-radius: 50px;
     width: 235px;
     height: 38px;
-    background-color: #ABA8A8;
+    background-color: #36363630;
+    flex-grow: 1;
+    flex-wrap: wrap;
     box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.25);
 }
 
-#admin-name {
+#admin-name, .admin-info-element, .admin-edit-profile {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 500;
+    font-size: 1.5rem;
     color: white;
 }
 
-.parentAdminInfo{
-    background-color: #D9D9D9;
-    padding: 12% 15% 12% 33%;
-    width:50%;
-    border-radius: 43px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.164);
-    margin-right:15%;
+.admin-profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
+.parent-admin-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 400px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.admin-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.admin-info-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #36363630;
+    box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.admin-edit-profile-button-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.admin-edit-profile {
+    border: 0;
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+    background-color: #294369;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.admin-edit-profile:hover {
+    background-color: #345586;
 }
