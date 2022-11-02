@@ -2,12 +2,7 @@
 
 abstract class database
 {
-    private function __construct()
-    {
-    }
-    private function __clone()
-    {
-    }
+
     public function __destruct()
     {
         $this->disconnect();
@@ -19,9 +14,9 @@ abstract class database
     private function connect()
     {
         $hostname = "localhost";
-        $bancodedados = "testeprojeto";
+        $bancodedados = "projeto_charlotte";
         $usuario = "root";
-        $senha = "1234";
+        $senha = "root";
 
         try {
             $this->conexao = new PDO("mysql:host=" . $hostname . ";dbname=" . $bancodedados . "", "$usuario", "$senha");

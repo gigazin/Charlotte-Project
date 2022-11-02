@@ -1,17 +1,9 @@
 <?php
-include_once("Model/entregadorModel.php");
-require_once("Database/database.php");
+include_once("./Model/entregadorModel.php");
+require_once("./Database/database.php");
 
 class entregadorDAO extends database
 {
-
-    //padrão do PHP
-    public function __construct()
-    {
-    }
-    private function __clone()
-    {
-    }
 
     public function __destruct()
     {
