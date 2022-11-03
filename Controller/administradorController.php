@@ -1,5 +1,5 @@
 <?php
-include_once("./DAO/administradorDAO.php");
+include_once("../DAO/administradorDAO.php");
 
 //funcao intermediaria entre a view e o DAO para inserir o administrador, aqui deve ficar as regras de validacao (se for nulo, se ja existe, etc)
 

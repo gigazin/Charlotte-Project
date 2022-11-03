@@ -1,6 +1,6 @@
 <?php
-include_once("./Model/administradorModel.php");
-require_once("./Database/database.php");
+include_once("../Model/administradorModel.php");
+require_once("../Database/database.php");
 
 class administradorDAO extends database
 {
