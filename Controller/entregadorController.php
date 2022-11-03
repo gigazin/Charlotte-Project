@@ -1,5 +1,5 @@
 <?php
-include_once("./DAO/entregadorDAO.php");
+include_once("../DAO/entregadorDAO.php");
 
 //funcao intermediaria entre a view e o DAO para inserir o usuario, aqui deve ficar as regras de validacao (se for nulo, se ja existe, etc)
 // function inserirEntregador($fields, $nome, $login, $senha)
