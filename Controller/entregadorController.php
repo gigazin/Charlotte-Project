@@ -27,3 +27,7 @@ function listarEntregadorID($id)
     $arr = $entregadorDAO->load($fields, $add);
     return $arr;
 }
+
+function cadastrarEntregador() {
+    
+}

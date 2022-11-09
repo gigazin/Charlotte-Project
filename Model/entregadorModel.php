@@ -23,9 +23,15 @@ class entregador{
 	/*Variaveis privadas que receberao os dados*/
 	private $id = 0;
 	private $nome = "";
-	private $login = "";
-	private $senha = "";
-	
+	private $cidade = "";
+	private $cpf = "";
+	private $IdCoordenador = 0;
+	private $salario = 0.0;
+	private $bonificacao = 0.0;
+	private $turno = "";
+	private $veiculo = "";
+	private $entregas = 0;
+
 	/*Metodos get e set que trazem o conteudo da variavel privada desejada*/
 	public function getId(){
 		return $this->id;
@@ -40,18 +46,60 @@ class entregador{
 	public function setNome($nome){
 		$this->nome = $nome;
 	}
+
+	public function getCidade(){
+		return $this->cidade;
+	}
+	public function setCidade($cidade){
+		$this->cidade = $cidade;
+	}
 	
-	public function getLogin(){
-		return $this->login;
+	public function getCpf(){
+		return $this->cpf;
 	}
-	public function setLogin($login){
-		$this->login = $login;
+	public function setCpf($cpf){
+		$this->$cpf = $cpf;
 	}
-	
-	public function getSenha(){
-		return $this->senha;
+
+	public function getIdCoordenador(){
+		return $this->IdCoordenador;
 	}
-	public function setSenha($senha){
-		$this->senha = $senha;
+	public function setIdCoordenador($IdCoordenador){
+		$this->IdCoordenador = $IdCoordenador;
+	}
+
+	public function getSalario(){
+		return $this->salario;
+	}
+	public function setSalario($salario){
+		$this->salario = $salario;
+	}
+
+	public function getBonificacao(){
+		return $this->bonificacao;
+	}
+	public function setBonificacao($bonificacao){
+		$this->bonificacao = $bonificacao;
+	}
+
+	public function getTurno(){
+		return $this->turno;
+	}
+	public function setTurno($turno){
+		$this->turno = $turno;
+	}
+
+	public function getVeiculo(){
+		return $this->veiculo;
+	}
+	public function setVeiculo($veiculo){
+		$this->veiculo = $veiculo;
+	}
+
+	public function getEntregas(){
+		return $this->entregas;
+	}
+	public function setEntregas($entregas){
+		$this->entregas = $entregas;
 	}
 }
