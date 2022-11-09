@@ -1,6 +1,6 @@
 <?php
 //precisa do controller para chamar os métodos
-include_once("../Controller/administradorController.php");
+include_once("/Controller/administradorController.php");
 ?>
 
 <!-- HTML DO SITE -->
@@ -56,8 +56,8 @@ include_once("../Controller/administradorController.php");
     <title>Projeto Charlotte</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../View/public/css/reset.css" />
-    <link rel="stylesheet" href="../View/public/css/style.css" />
+    <link rel="stylesheet" href="/View/public/css/reset.css" />
+    <link rel="stylesheet" href="/View/public/css/style.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -120,7 +120,7 @@ include_once("../Controller/administradorController.php");
   </body>
 
   <!-- Script -->
-  <script src="../View/public/js/script.js"></script>
+  <script src="/View/public/js/script.js"></script>
 </html>
 
 
