@@ -1,6 +1,6 @@
 <?php
 //precisa do controller para chamar os métodos
-include_once("/Controller/administradorController.php");
+include_once("../Controller/entregadorController.php");
 ?>
 
 <!-- HTML DO SITE -->
@@ -36,6 +36,7 @@ include_once("/Controller/administradorController.php");
     <input type="submit" class="button" name="btnDeletarAdmin" value="DELETAR ADMIN">
 </form>
 <hr>
+-->
 <h1>LISTAR TODOS OS ADMINISTRADORES</h1>
 <form method="post">
     <input type="submit" class="button" name="btnListarTodosAdm" value="LISTAR TODOS OS ADM">
@@ -45,7 +46,8 @@ include_once("/Controller/administradorController.php");
 <form method="post">
     ID do Admin: <input type="text" name="id" id=""><br><br>
     <input type="submit" class="button" name="btnListarAdmID" value="LISTAR ADM POR ID">
-</form> -->
+</form> 
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -138,6 +140,18 @@ function realizarLogin()
     echo $situacao;
 }
 
+function exibirEntregadores()
+{
+  $array = listarEntregadores();
+  $listaEntregadores = "";
+  foreach($array as $key => $row){
+    $listaEntregadores .= $row->getId()." - ".
+                           $row->getNome()." - ".
+                           $row->getCidade()."<br>\n";
+  }
+  echo $listaEntregadores;
+}
+
 // function atualizarDadosAdmin()
 // {
 //     $login = $_POST['login'];
@@ -153,5 +167,9 @@ function realizarLogin()
 
 if (array_key_exists('btnLogin', $_POST)) {
     realizarLogin();
+}
+
+if (array_key_exists('btnListarTodosAdm', $_POST)){
+  exibirEntregadores();
 }
 
