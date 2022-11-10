@@ -98,11 +98,110 @@ hr{
     align-items: center;
     justify-content: center;
     margin-top: 7%;
-    width: 1187px;
+    width: 753px;
     height: 565px;
     background-color: #1d1d1d50;
     border-radius: 50px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.164);
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
+.coordinatorsTable {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    border: 0;
+}
+
+.coordinatorsTable th, .tableHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1.68rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableCells {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 7px 0px 7px 0px;
+}
+
+.coordinatorsTable tr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.coordinatorsTable td {
+    display: flex;
+    font-family: 'Glory', Arial, Helvetica, sans-serif;
+    color: #4876BA;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #3636364D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    height: 30px;
+    gap: 20px;
+}
+
+#nameCell {
+    width: 200px;
+    height: 44px;
+}
+
+#CPFCell {
+    width: 186px;
+    height: 44px;
+}
+
+#cityCell {
+    width: 208px;
+    height: 44px;
+}
+
+.tableButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    width: 750px;
+    margin: 10px 0px 680px 0px;
+}
+
+.tableMenu, .tableMenuItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+}
+
+.tableMenuOption {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tableMenuOption:hover {
+    color: #FFCDB1;
+}
