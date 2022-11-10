@@ -72,7 +72,6 @@ hr{
     display:flex;
     align-items:center;
     justify-content: space-around;
-
 }
 
 .menuItemsDiv{
@@ -93,7 +92,7 @@ hr{
     transition: 0.5s;
 }
 
-#profileText {
+#menuText {
     color: #FFCDB1;
 }
 

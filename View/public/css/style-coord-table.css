@@ -1,0 +1,108 @@
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+    margin: 0px;
+}
+
+body {
+    background: linear-gradient(252.44deg, #294369 0%, #0B0D22 100%);
+    min-height: 100%;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #29436900;
+    margin-block: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0b0d2238;
+    border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0b0d2279;
+}
+
+header{
+    margin-top:10px;
+}
+
+hr{
+    margin-top:10px;
+}
+
+.admin-icon {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+}
+  
+.admin-icon img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+
+}
+
+.menuItemsDiv{
+    display:flex;
+}
+
+.menuItems{
+    margin-left: 20px;
+    color:white;
+    font-family: 'Raleway';
+    font-weight:400;
+    font-size:20px;
+}
+
+.color{
+    text-decoration:none;
+    color:white;
+    transition: 0.5s;
+}
+
+#coordinatorText {
+    color: #FFCDB1;
+}
+
+.color:hover{
+    color:#FFCDB1;
+}
+
+.pageMainContent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+    width: 1187px;
+    height: 565px;
+    background-color: #1d1d1d50;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.164);
+    overflow-y: scroll;
+}
+
