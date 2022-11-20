@@ -9,7 +9,9 @@ function login($login, $senha)
     $fields = "login,senha";
     $add = 'WHERE login = "' .  "$login" . '" and senha =  "' . "$senha" . '";';
     $arr = $administradorDAO->load($fields, $add);
-    $mensagem = !empty($arr) && $arr[0]->getLogin() && $arr[0]->getSenha() == $senha ? 'Login realizado!' : 'Dados incorretos!';
+    $mensagem = !empty($arr) && $arr[0]->getLogin() && $arr[0]->getSenha() == $senha ? 
+    header("Location: ../View/public/html/admin-menu.php")
+    : 'Dados incorretos!';
     return $mensagem;
 }
 

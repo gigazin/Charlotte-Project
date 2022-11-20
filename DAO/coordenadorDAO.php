@@ -1,6 +1,6 @@
 <?php
-include_once("../Model/coordenadorModel.php");
-require_once("../Database/database.php");
+include_once("../../../Model/coordenadorModel.php");
+require_once("../../../Database/database.php");
 
 class coordenadorDAO extends database
 {

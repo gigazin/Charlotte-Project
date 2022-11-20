@@ -1,6 +1,6 @@
 <?php
 //precisa do controller para chamar os métodos
-include_once("../Controller/entregadorController.php");
+include_once("../Controller/administradorController.php");
 ?>
 
 <!-- HTML DO SITE -->
@@ -37,16 +37,6 @@ include_once("../Controller/entregadorController.php");
 </form>
 <hr>
 -->
-<h1>LISTAR TODOS OS ADMINISTRADORES</h1>
-<form method="post">
-    <input type="submit" class="button" name="btnListarTodosAdm" value="LISTAR TODOS OS ADM">
-</form>
-<hr>
-<h1>LISTAR ADMINISTRADOR POR ID</h1>
-<form method="post">
-    ID do Admin: <input type="text" name="id" id=""><br><br>
-    <input type="submit" class="button" name="btnListarAdmID" value="LISTAR ADM POR ID">
-</form> 
 
 
 <!DOCTYPE html>
@@ -140,17 +130,7 @@ function realizarLogin()
     echo $situacao;
 }
 
-function exibirEntregadores()
-{
-  $array = listarEntregadores();
-  $listaEntregadores = "";
-  foreach($array as $key => $row){
-    $listaEntregadores .= $row->getId()." - ".
-                           $row->getNome()." - ".
-                           $row->getCidade()."<br>\n";
-  }
-  echo $listaEntregadores;
-}
+
 
 // function atualizarDadosAdmin()
 // {
@@ -169,7 +149,5 @@ if (array_key_exists('btnLogin', $_POST)) {
     realizarLogin();
 }
 
-if (array_key_exists('btnListarTodosAdm', $_POST)){
-  exibirEntregadores();
-}
+
 

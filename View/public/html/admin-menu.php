@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -31,7 +33,7 @@
         <nav class="menu">
             <ul class="menuItemsDiv">
                 <li class="menuItems"><a href="#" class="color" id="menuText">Menu</a></li>
-                <li class="menuItems"><a href="./coordinators-table.html" target="_self" class="color">Coordenadores</a></li>
+                <li class="menuItems"><a href="./coordinators-table.php" target="_self" class="color">Coordenadores</a></li>
                 <li class="menuItems"><a href="#" class="color">Entregadores</a></li>
                 <li class="menuItems"><a href="#" class="color">Sair</a></li>
             </ul>
@@ -66,10 +68,6 @@
             </button>
           </div>
         </div>  
-        
-        <!--
-        <div class="parentAdminInfo">
-        </div> -->
     </main>
   </body>
 </html>

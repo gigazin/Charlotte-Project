@@ -1,3 +1,8 @@
+<?php
+include_once("../../../Controller/coordenadorController.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -29,13 +34,17 @@
         </div>
         <nav class="menu">
             <ul class="menuItemsDiv">
-                <li class="menuItems"><a href="./admin-menu.html" target="_self" class="color">Menu</a></li>
+                <li class="menuItems"><a href="./admin-menu.php" target="_self" class="color">Menu</a></li>
                 <li class="menuItems"><a href="#" class="color" id="coordinatorText">Coordenadores</a></li>
                 <li class="menuItems"><a href="#" class="color">Entregadores</a></li>
                 <li class="menuItems"><a href="#" class="color">Sair</a></li>
             </ul>
         </nav>
     </header>
+
+    
+     
+     
     <main class="pageMainContent">
         <div class="contentWrapper">
             <table class="coordinatorsTable">
@@ -44,26 +53,25 @@
                     <th>CPF</th>
                     <th>Cidade</th>
                 </tr>
-                <tr class="tableCells">
-                    <td id="nameCell">Danilo Silva</td>
-                    <td id="CPFCell">123.456.789-00</td>
-                    <td id="cityCell">Recife</td>
-                </tr>
-                <tr class="tableCells">
-                    <td id="nameCell">Luiz Fernando</td>
-                    <td id="CPFCell">987.654.321-00</td>
-                    <td id="cityCell">Olinda</td>
-                </tr>
-                <tr class="tableCells">
-                    <td id="nameCell">Lucas Antônio</td>
-                    <td id="CPFCell">999.888.777-66</td>
-                    <td id="cityCell">Jaboatão</td>
-                </tr>
-                <tr class="tableCells">
-                    <td id="nameCell">Flávio Vinícius</td>
-                    <td id="CPFCell">420.555.777-99</td>
-                    <td id="cityCell">Recife</td>
-                </tr>
+            <?php 
+            $dados = listarCoordenador();
+            $array = [];
+            foreach($dados as $key => $row){
+            $nome = $row->getNome();
+            $cpf = $row->getCpf();
+            $cidade = $row->getCidade();
+            $array[] = 
+                "<tr class='tableCells'>
+                <td id='nameCell'>$nome</td>
+                <td id='CPFCell'>$cpf</td>
+                <td id='cityCell'>$cidade</td>
+            </tr>"
+            ;
+           echo $array[$key];
+            
+            }
+
+            ?>
             </table>
         </div>
         <div class="tableButtons">
