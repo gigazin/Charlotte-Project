@@ -28,6 +28,7 @@ include_once("../../../Controller/coordenadorController.php");
     />
 </head>
 <body>
+
     <header class="pageHeader">
         <div class ="admin-icon">
             <img src="../img/leuson.jpg" alt="leuson sensual">
@@ -42,46 +43,43 @@ include_once("../../../Controller/coordenadorController.php");
         </nav>
     </header>
 
-    
-     
-     
     <main class="pageMainContent">
         <div class="contentWrapper">
-            <table class="coordinatorsTable">
-                <tr class="tableHeader">
-                    <th>Nome</th>
-                    <th>CPF</th>
-                    <th>Cidade</th>
-                </tr>
-            <?php 
-            $dados = listarCoordenador();
-            $array = [];
-            foreach($dados as $key => $row){
-            $nome = $row->getNome();
-            $cpf = $row->getCpf();
-            $cidade = $row->getCidade();
-            $array[] = 
-                "<tr class='tableCells'>
-                <td id='nameCell'>$nome</td>
-                <td id='CPFCell'>$cpf</td>
-                <td id='cityCell'>$cidade</td>
-            </tr>"
-            ;
-           echo $array[$key];
-            
-            }
-
-            ?>
-            </table>
+            <div class="tableWrapper">
+                <table class="coordinatorsTable">
+                    <tr class="tableHeader">
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Cidade</th>
+                    </tr>
+                    <?php 
+                        $dados = listarCoordenador();
+                        $array = [];
+                        foreach($dados as $key => $row){
+                            $nome = $row->getNome();
+                            $cpf = $row->getCpf();
+                            $cidade = $row->getCidade();
+                            $array[] = 
+                                "<tr class='tableCells'>
+                                <td id='nameCell'>$nome</td>
+                                <td id='CPFCell'>$cpf</td>
+                                <td id='cityCell'>$cidade</td>
+                                </tr>"
+                            ;
+                            echo $array[$key];
+                        }
+                    ?>
+                </table>
+            </div>
         </div>
         <div class="tableButtons">
             <nav class="tableMenu">
                 <ul class="tableMenuItems">
-                    <li class="tableMenuOption">Novo</li>
                     <li class="tableMenuOption">Buscar</li>
                 </ul>
             </nav>
         </div>
     </main>
+    
 </body>
 </html>

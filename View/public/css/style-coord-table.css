@@ -108,7 +108,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 7%;
-    width: 753px;
+    width: 770px;
     height: 565px;
     background-color: #1d1d1d50;
     border-radius: 50px;
@@ -123,6 +123,23 @@ body {
     text-align: center;
     width: 500px;
     border: 0;
+}
+
+.tableWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 420px;
+    width: 650px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.tableHeader {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: -25px 0px 0px 60px;
 }
 
 .coordinatorsTable th, .tableHeader {
