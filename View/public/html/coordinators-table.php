@@ -31,7 +31,9 @@ include_once("../../../Controller/coordenadorController.php");
 
     <header class="pageHeader">
         <div class ="admin-icon">
-            <img src="../img/leuson.jpg" alt="leuson sensual">
+            <a href="./admin-menu.php">
+                <img src="../img/admin-icon.png" alt="Ícone perfil administrador">
+            </a>
         </div>
         <nav class="menu">
             <ul class="menuItemsDiv">

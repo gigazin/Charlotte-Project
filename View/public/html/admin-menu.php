@@ -28,7 +28,7 @@
   <body>
     <header class="pageHeader">
       <div class ="admin-icon">
-        <img src="../img/leuson.jpg" alt="leuson sensual" />
+        <img src="../img/admin-icon.png" alt="Ícone perfil administrador" />
       </div>
         <nav class="menu">
             <ul class="menuItemsDiv">
@@ -43,7 +43,7 @@
         <div class="parentAdminDiv">
           <div class="parentAdminWrapper"></div>
           <div class="admin-icon-profile">
-            <div class="admin-profile-image"><img src="../img/leuson.jpg" alt="leuson" id="admin-profile-picture"></div>
+            <div class="admin-profile-image"><img src="../img/admin-icon.png" alt="Foto de perfil administrador" id="admin-profile-picture"></div>
           </div>
           <div class="admin-profile-name">
             <h3 id="admin-name">Leuson Mario</h3>
