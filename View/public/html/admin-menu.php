@@ -52,20 +52,15 @@
             <div class="content-divider"></div>
             <div class="parent-admin-info">
               <div class="admin-info">
-                <h3 class="admin-info-element">USER_ROLE</h3>
+                <h3 class="admin-info-element">Novo Entregador</h3>
               </div>
               <div class="admin-info">
-                <h3 class="admin-info-element">USER_NUMBER</h3>
+                <h3 class="admin-info-element">Novo Coordenador</h3>
               </div>
               <div class="admin-info">
-                <h3 class="admin-info-element">USER_MAIL_ADDRESS</h3>
+                <h3 class="admin-info-element">Editar Perfil</h3>
               </div>
             </div>
-          </div>
-          <div class="admin-edit-profile-button-div">
-            <button class="admin-edit-profile" name="editProfileButton">
-              Editar Perfil
-            </button>
           </div>
         </div>  
     </main>
