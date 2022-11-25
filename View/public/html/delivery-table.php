@@ -1,7 +1,9 @@
+<!--
 <?php
-include_once("../../../Controller/coordenadorController.php");
+// include_once("../../../Controller/entregadorController.php");
 
 ?>
+-->
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -13,7 +15,7 @@ include_once("../../../Controller/coordenadorController.php");
 
     <!-- CSS -->
     <link rel="stylesheet" href="/View/public/css/reset.css" />
-    <link rel="stylesheet" href="/View/public/css/style-coord-table.css" />
+    <link rel="stylesheet" href="/View/public/css/style-delivery-table.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,8 +40,8 @@ include_once("../../../Controller/coordenadorController.php");
         <nav class="menu">
             <ul class="menuItemsDiv">
                 <li class="menuItems"><a href="./admin-menu.php" target="_self" class="color">Menu</a></li>
-                <li class="menuItems"><a href="#" class="color" id="coordinatorText">Coordenadores</a></li>
-                <li class="menuItems"><a href="./delivery-table.php" class="color">Entregadores</a></li>
+                <li class="menuItems"><a href="./coordinators-table.php" class="color">Coordenadores</a></li>
+                <li class="menuItems"><a href="#" class="color" id="deliveryText">Entregadores</a></li>
                 <li class="menuItems"><a href="#" class="color">Sair</a></li>
             </ul>
         </nav>
@@ -50,27 +52,31 @@ include_once("../../../Controller/coordenadorController.php");
             <div class="tableWrapper">
                 <table class="coordinatorsTable">
                     <tr class="tableHeader">
-                        <th>Nome</th>
-                        <th>CPF</th>
-                        <th>Cidade</th>
+                        <th id="nameHeader">Nome</th>
+                        <th id="shiftHeader">Turno</th>
+                        <th id="cityHeader">Cidade</th>
+                        <th id="vehicleHeader">Veículo</th>
+                        <th id="bonusHeader">Bonificação</th>
+                        <th id="wageHeader">Salário</th>
                     </tr>
-                    <?php 
-                        $dados = listarCoordenador();
-                        $array = [];
-                        foreach($dados as $key => $row){
-                            $nome = $row->getNome();
-                            $cpf = $row->getCpf();
-                            $cidade = $row->getCidade();
-                            $array[] = 
+                    
+                  <!--  <?php 
+                        // $dados = listarCoordenador();
+                        // $array = [];
+                        // foreach($dados as $key => $row){
+                            // $nome = $row->getNome();
+                            // $cpf = $row->getCpf();
+                            // $cidade = $row->getCidade();
+                            // $array[] = 
                                 "<tr class='tableCells'>
                                 <td id='nameCell'>$nome</td>
                                 <td id='CPFCell'>$cpf</td>
                                 <td id='cityCell'>$cidade</td>
                                 </tr>"
-                            ;
-                            echo $array[$key];
-                        }
-                    ?>
+                            // ;
+                            // echo $array[$key];
+                        // }
+                    ?> -->
                 </table>
             </div>
         </div>
