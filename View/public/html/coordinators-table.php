@@ -49,28 +49,32 @@ include_once("../../../Controller/coordenadorController.php");
         <div class="contentWrapper">
             <div class="tableWrapper">
                 <table class="coordinatorsTable">
-                    <tr class="tableHeader">
-                        <th>Nome</th>
-                        <th>CPF</th>
-                        <th>Cidade</th>
-                    </tr>
-                    <?php 
-                        $dados = listarCoordenador();
-                        $array = [];
-                        foreach($dados as $key => $row){
-                            $nome = $row->getNome();
-                            $cpf = $row->getCpf();
-                            $cidade = $row->getCidade();
-                            $array[] = 
-                                "<tr class='tableCells'>
-                                <td id='nameCell'>$nome</td>
-                                <td id='CPFCell'>$cpf</td>
-                                <td id='cityCell'>$cidade</td>
-                                </tr>"
-                            ;
-                            echo $array[$key];
-                        }
-                    ?>
+                    <thead>
+                        <tr class="tableHeader">
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Cidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php 
+                            $dados = listarCoordenador();
+                            $array = [];
+                            foreach($dados as $key => $row){
+                                $nome = $row->getNome();
+                                $cpf = $row->getCpf();
+                                $cidade = $row->getCidade();
+                                $array[] = 
+                                    "<tr class='tableCells'>
+                                    <td id='nameCell'>$nome</td>
+                                    <td id='CPFCell'>$cpf</td>
+                                    <td id='cityCell'>$cidade</td>
+                                    </tr>"
+                                ;
+                                echo $array[$key];
+                            }
+                        ?>
+                    </tbody>
                 </table>
             </div>
         </div>

@@ -50,33 +50,36 @@
     <main class="pageMainContent">
         <div class="contentWrapper">
             <div class="tableWrapper">
-                <table class="coordinatorsTable">
-                    <tr class="tableHeader">
-                        <th id="nameHeader">Nome</th>
-                        <th id="shiftHeader">Turno</th>
-                        <th id="cityHeader">Cidade</th>
-                        <th id="vehicleHeader">Veículo</th>
-                        <th id="bonusHeader">Bonificação</th>
-                        <th id="wageHeader">Salário</th>
-                    </tr>
-                    
-                  <!--  <?php 
-                        // $dados = listarCoordenador();
-                        // $array = [];
-                        // foreach($dados as $key => $row){
-                            // $nome = $row->getNome();
-                            // $cpf = $row->getCpf();
-                            // $cidade = $row->getCidade();
-                            // $array[] = 
-                                "<tr class='tableCells'>
-                                <td id='nameCell'>$nome</td>
-                                <td id='CPFCell'>$cpf</td>
-                                <td id='cityCell'>$cidade</td>
-                                </tr>"
-                            // ;
-                            // echo $array[$key];
-                        // }
-                    ?> -->
+                <table class="deliveryTable">
+                    <thead>
+                        <div class="tableHeader">
+                            <h3 id="nameHeader">Nome</h3>
+                            <h3 id="shiftHeader">Turno</h3>
+                            <h3 id="cityHeader">Cidade</h3>
+                            <h3 id="vehicleHeader">Veículo</h3>
+                            <h3 id="bonusHeader">Bonificação</h3>
+                            <h3 id="wageHeader">Salário</h3>
+                        </d>
+                    </thead>
+                    <tbody>
+                        <!--  <?php 
+                            // $dados = listarCoordenador();
+                            // $array = [];
+                            // foreach($dados as $key => $row){
+                                // $nome = $row->getNome();
+                                // $cpf = $row->getCpf();
+                                // $cidade = $row->getCidade();
+                                // $array[] = 
+                                    "<tr class='tableCells'>
+                                    <td id='nameCell'>$nome</td>
+                                    <td id='CPFCell'>$cpf</td>
+                                    <td id='cityCell'>$cidade</td>
+                                    </tr>"
+                                // ;
+                                // echo $array[$key];
+                            // }
+                        ?> -->
+                    </tbody>
                 </table>
             </div>
         </div>

@@ -117,7 +117,8 @@ body {
   overflow-x: hidden;
 }
 
-.coordinatorsTable {
+.deliveryTable {
+  display: flex;
   justify-content: center;
   align-items: flex-start;
   text-align: center;
@@ -126,7 +127,6 @@ body {
 }
 
 .tableWrapper {
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -136,43 +136,54 @@ body {
   overflow-y: scroll;
 }
 
+
 .tableHeader {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: absolute;
   text-align: center;
+  position: absolute;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   color: #FFFFFF;
   font-weight: 400;
   font-size: 1.68rem;
-  gap: 60px;
-  margin: -40px 0px 0px 90px;
+  margin-top: -20px;
 }
 
-.coordinatorsTable th {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 120px;
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
-  color: #FFFFFF;
-  font-weight: 400;
-  font-size: 1.68rem;
+.tableHeader h3 {
+  position: fixed;
+}
+
+#nameHeader {
+  margin-left: 210px;
+}
+  
+#shiftHeader {
+  margin-left: 545px;
+}
+  
+#cityHeader {
+  margin-left: 860px;
+}
+  
+#vehicleHeader {
+  margin-left: 1185px;
+}
+  
+#bonusHeader {
+  margin-left: 1490px;
+}
+  
+#wageHeader {
+  margin-left: 1842px;
 }
 
 .tableCells {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
   gap: 20px;
   margin: 7px 0px 7px 0px;
 }
 
-.coordinatorsTable tr {
+.deliveryTable tr {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -180,7 +191,7 @@ body {
   text-align: center;
 }
 
-.coordinatorsTable td {
+.deliveryTable td {
   display: flex;
   font-family: 'Glory', Arial, Helvetica, sans-serif;
   color: #4876BA;
@@ -193,7 +204,6 @@ body {
   height: 40px;
   gap: 20px;
 }
-
 
 #nameCell {
   width: 200px;
