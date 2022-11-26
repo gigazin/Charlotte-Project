@@ -40,9 +40,10 @@
         <nav class="menu">
             <ul class="menuItemsDiv">
                 <li class="menuItems"><a href="./admin-menu.php" target="_self" class="color">Menu</a></li>
-                <li class="menuItems"><a href="./coordinators-table.php" class="color">Coordenadores</a></li>
+                <li class="menuItems"><a href="./coordinators-table.php" target="_self" class="color">Coordenadores</a></li>
                 <li class="menuItems"><a href="#" class="color" id="deliveryText">Entregadores</a></li>
-                <li class="menuItems"><a href="#" class="color">Sair</a></li>
+                <li class="menuItems"><a href="../../../api/index.php" target="_self" 
+                class="color">Sair</a></li>
             </ul>
         </nav>
     </header>

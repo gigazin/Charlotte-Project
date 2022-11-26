@@ -110,9 +110,6 @@ include_once("../Controller/administradorController.php");
           </div>
     </main>
   </body>
-
-  <!-- Script -->
-  <script src="/View/public/js/script.js"></script>
 </html>
 
 

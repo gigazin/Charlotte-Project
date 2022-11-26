@@ -39,8 +39,8 @@ include_once("../../../Controller/coordenadorController.php");
             <ul class="menuItemsDiv">
                 <li class="menuItems"><a href="./admin-menu.php" target="_self" class="color">Menu</a></li>
                 <li class="menuItems"><a href="#" class="color" id="coordinatorText">Coordenadores</a></li>
-                <li class="menuItems"><a href="./delivery-table.php" class="color">Entregadores</a></li>
-                <li class="menuItems"><a href="#" class="color">Sair</a></li>
+                <li class="menuItems"><a href="./delivery-table.php" target="_self" class="color">Entregadores</a></li>
+                <li class="menuItems"><a href="../../../api/index.php" target="_self" class="color">Sair</a></li>
             </ul>
         </nav>
     </header>
