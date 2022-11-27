@@ -322,7 +322,13 @@
     $veiculo = $_POST['veiculo'];
     $bonificacao = $_POST['bonificacao'];
     $idcoordenador = $_POST['idcoordenador'];
-    $situacao = inserirEntregador($fields,$nome,$turno,$cidade,$veiculo,$bonificacao,2000.0,$idcoordenador);
+
+    $salario = rand(500,3000);
+    if ($bonificacao==1) {
+      $salario = $salario + $salario*0.13; 
+    }
+
+    $situacao = inserirEntregador($fields,$nome,$turno,$cidade,$veiculo,$bonificacao,$salario,$idcoordenador);
     echo $situacao;
   }
 
