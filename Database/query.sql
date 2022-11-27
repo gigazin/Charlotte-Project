@@ -29,3 +29,11 @@ CREATE TABLE entregador(
     idcoordenador INTEGER NOT NULL,
     FOREIGN KEY (idcoordenador) REFERENCES coordenador (id)
 );
+
+-- CONSULTAS SQL --
+
+#SELECT * FROM entregador WHERE entregador.bonificacao = 1;
+#SELECT * FROM entregador WHERE salario >= 2000;
+#SELECT * FROM coordenador WHERE cidade = "Recife";
+#SELECT entre.nome, entre.veiculo, entre.salario, entre.cidade, coorde.nome AS coordNome FROM entregador AS entre,coordenador AS coorde Where entre.veiculo = "Moto" and coorde.id = 1;
+#SELECT AVG(entregador.salario) AS mediaSalarioPaulista FROM entregador WHERE entregador.cidade = "Paulista";
