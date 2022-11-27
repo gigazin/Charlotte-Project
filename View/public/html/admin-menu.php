@@ -75,7 +75,7 @@
                 </button>
               </div>
               <div class="admin-info">
-                <button class="admin-info-button" onclick="openAdminEditProfileModal()">
+                <button disabled class="admin-info-button" onclick="openAdminEditProfileModal()">
                   <h3 class="admin-info-element">Editar Perfil</h3>
                 </button>
               </div>
@@ -163,7 +163,7 @@
                   </div>
                   <input 
                   type="text"
-                  name="coordenador_idcoordenador"
+                  name="idcoordenador"
                   placeholder="Informe o ID do coordenador..."
                   class="input-box"
                   />
@@ -311,14 +311,14 @@
   
   
   function cadastrarEntregador(){
-    $fields = "nome,turno,cidade,veiculo,bonificacao,salario,coordenador_idcoordenador";
+    $fields = "nome,turno,cidade,veiculo,bonificacao,salario,idcoordenador";
     $nome = $_POST['nome'];
     $cidade =$_POST['cidade'];
     $turno = $_POST['turno'];
     $veiculo = $_POST['veiculo'];
     $bonificacao = $_POST['bonificacao'];
-    $coordenador_idcoordenador = $_POST['coordenador_idcoordenador'];
-    $situacao = inserirEntregador($fields,$nome,$turno,$cidade,$veiculo,$bonificacao,2000.0,$coordenador_idcoordenador);
+    $idcoordenador = $_POST['idcoordenador'];
+    $situacao = inserirEntregador($fields,$nome,$turno,$cidade,$veiculo,$bonificacao,2000.0,$idcoordenador);
     echo $situacao;
   }
 
@@ -331,7 +331,6 @@
   }
 
   function editarSenha(){
-   
     $novaSenha = $_POST['novaSenha'];
     $confirmarSenha = $_POST['confirmarSenha'];
     $id = 1;

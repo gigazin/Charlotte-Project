@@ -24,12 +24,11 @@ class entregador{
 	private $id;
 	private $nome ;
 	private $cidade;
-	private $coordenador_idcoordenador;
+	private $idcoordenador;
 	private $salario;
 	private $bonificacao;
 	private $turno;
 	private $veiculo;
-	private $entregas;
 
 	/*Metodos get e set que trazem o conteudo da variavel privada desejada*/
 	public function getId(){
@@ -54,7 +53,7 @@ class entregador{
 	}
 
 	public function getIdCoordenador(){
-		return $this->coordenador_idcoordenador;
+		return $this->idcoordenador;
 	}
 
 	public function getSalario(){
@@ -83,12 +82,5 @@ class entregador{
 	}
 	public function setVeiculo($veiculo){
 		$this->veiculo = $veiculo;
-	}
-
-	public function getEntregas(){
-		return $this->entregas;
-	}
-	public function setEntregas($entregas){
-		$this->entregas = $entregas;
 	}
 }
