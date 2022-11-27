@@ -32,4 +32,13 @@ function listarEntregadorID($id)
     return $arr;
 }
 
+function deletarEntregador($id)
+{
+    $entregadorDAO = new entregadorDAO();
+    $where = "id = ?";
+    $params = array($id);
+    $entregadorDAO->delete($where, $params);
+    $result = $entregadorDAO->load();
+    return $result==0? 'Entregador não encontrado!' : header("Refresh: 0");
+}
 

@@ -1,6 +1,14 @@
 <?php
 include_once("../../../Controller/coordenadorController.php");
 
+if (array_key_exists('btnDeletarCoordenador', $_POST)) {
+    excluirCoordenador();
+}
+function excluirCoordenador()
+{
+    $id = $_POST['IDcoordenador'];
+    deletarCoordenador($id);
+}
 ?>
 
 <!DOCTYPE html>
