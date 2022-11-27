@@ -1,8 +1,6 @@
-
 <?php
 include_once("../../../Controller/entregadorController.php");
 include_once("../../../Controller/coordenadorController.php");
-
 
 ?>
 
@@ -18,6 +16,9 @@ include_once("../../../Controller/coordenadorController.php");
     <!-- CSS -->
     <link rel="stylesheet" href="/View/public/css/reset.css" />
     <link rel="stylesheet" href="/View/public/css/style-delivery-table.css" />
+
+    <!-- Script -->
+    <script src="../js/table-script.js" defer></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,7 +45,7 @@ include_once("../../../Controller/coordenadorController.php");
                 <li class="menuItems"><a href="./admin-menu.php" target="_self" class="color">Menu</a></li>
                 <li class="menuItems"><a href="./coordinators-table.php" target="_self" class="color">Coordenadores</a></li>
                 <li class="menuItems"><a href="#" class="color" id="deliveryText">Entregadores</a></li>
-                <li class="menuItems"><a href="../../../api/index.php" target="_self" 
+                <li class="menuItems"><a href="/index.php" target="_self" 
                 class="color">Sair</a></li>
             </ul>
         </nav>
@@ -84,7 +85,7 @@ include_once("../../../Controller/coordenadorController.php");
                                     <td id='nameCell'>$nome</td>
                                     <td id='shiftCell'>$turno</td>
                                     <td id='cityCell'>$cidade</td>
-                                    <td id='vehicleCell'>$veiculo</td>
+                                  <td id='vehicleCell'>$veiculo</td>
                                     <td id='wageCell'>$salario</td>
                                     <td id='coordinatorCell'>$IdCoordenador</td>
                                     </tr>"
@@ -92,17 +93,55 @@ include_once("../../../Controller/coordenadorController.php");
                                  echo $array[$key];
                         
                          }
-                        ?> 
+                        ?>
                     </tbody>
                 </table>
             </div>
         </div>
-        <div class="tableButtons">
-            <nav class="tableMenu">
-                <ul class="tableMenuItems">
-                    <li class="tableMenuOption">Buscar</li>
-                </ul>
-            </nav>
+        <div class="buttonWrapper">
+            <div class="tableButtons">
+                <button class="del-button" onclick="openDeleteModal()">Deletar</button>
+            </div>
+        </div>
+
+        <!-- Page blur -->
+        <div class="pageBlur" id="pgBlur"></div>
+
+        <!-- Modals -->
+        <div class="delete-modal-wrapper" id="delete-modal">
+            <div class="modal-title">
+                <h3 class="modal-title-text">Deletar Entregador</h3>
+            </div>
+            <div class="delete-form-wrapper">
+                <form class="delete-form" method="post">
+                    <div class="delete-row">
+                        <div class="input-wrapper">
+                            <div class="input-title">
+                                <h3 class="input-title-text">ID do Entregador</h3>
+                            </div>
+                            <input 
+                                type="text"
+                                name="IDentregador"
+                                placeholder="Informe o ID..."
+                                class="input-box"
+                            />
+                        </div>
+                    </div>
+                    <div class="delete-row-buttons">
+                        <div class="input-wrapper">
+                            <input
+                                type="submit"
+                                name="btnDeletarEntregador"
+                                value="Deletar"      class="input-button"
+                                />
+                            </div>
+                            <div class="input-wrapper">
+                                <button class="input-button" onclick="closeDeleteModal()">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
     

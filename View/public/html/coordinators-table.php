@@ -15,6 +15,9 @@ include_once("../../../Controller/coordenadorController.php");
     <link rel="stylesheet" href="/View/public/css/reset.css" />
     <link rel="stylesheet" href="/View/public/css/style-coord-table.css" />
 
+    <!-- Script -->
+    <script src="../js/table-script.js" defer></script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,7 +43,7 @@ include_once("../../../Controller/coordenadorController.php");
                 <li class="menuItems"><a href="./admin-menu.php" target="_self" class="color">Menu</a></li>
                 <li class="menuItems"><a href="#" class="color" id="coordinatorText">Coordenadores</a></li>
                 <li class="menuItems"><a href="./delivery-table.php" target="_self" class="color">Entregadores</a></li>
-                <li class="menuItems"><a href="../../../api/index.php" target="_self" class="color">Sair</a></li>
+                <li class="menuItems"><a href="/index.php" target="_self" class="color">Sair</a></li>
             </ul>
         </nav>
     </header>
@@ -78,12 +81,50 @@ include_once("../../../Controller/coordenadorController.php");
                 </table>
             </div>
         </div>
-        <div class="tableButtons">
-            <nav class="tableMenu">
-                <ul class="tableMenuItems">
-                    <li class="tableMenuOption">Buscar</li>
-                </ul>
-            </nav>
+        <div class="buttonWrapper">
+            <div class="tableButtons">
+                <button class="del-button" onclick="openDeleteModal()">Deletar</button>
+            </div>
+        </div>
+        
+        <!-- Page blur -->
+        <div class="pageBlur" id="pgBlur"></div>
+
+        <!-- Modals -->
+        <div class="delete-modal-wrapper" id="delete-modal">
+            <div class="modal-title">
+                <h3 class="modal-title-text">Deletar Coordenador</h3>
+            </div>
+            <div class="delete-form-wrapper">
+                <form class="delete-form" method="post">
+                    <div class="delete-row">
+                        <div class="input-wrapper">
+                            <div class="input-title">
+                                <h3 class="input-title-text">ID do Coordenador</h3>
+                            </div>
+                            <input 
+                                type="text"
+                                name="IDcoordenador"
+                                placeholder="Informe o ID..."
+                                class="input-box"
+                            />
+                        </div>
+                    </div>
+                    <div class="delete-row-buttons">
+                        <div class="input-wrapper">
+                            <input
+                                type="submit"
+                                name="btnDeletarCoordenador"
+                                value="Deletar"      class="input-button"
+                                />
+                            </div>
+                            <div class="input-wrapper">
+                                <button class="input-button" onclick="closeDeleteModal()">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
     

@@ -202,33 +202,122 @@ body {
     height: 44px;
 }
 
-.tableButtons {
+.buttonWrapper {
+    margin: 30px 0px 0px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: right;
-    gap: 20px;
-    width: 750px;
-    margin: 10px 0px 680px 0px;
-}
+    justify-content: center;
+  }
+  
+  .del-button {
+    font-family: 'Glory', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: white;
+    width: 160px;
+    height: 50px;
+    background-color: #1d1d1d50;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.164);
+    border: 0;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .del-button:is(:hover, :focus) {
+    background-color: #25396b81;
+  }
 
-.tableMenu, .tableMenuItems {
-    display: flex;
-    flex-direction: row;
+.pageBlur {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    min-height: 150%;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    background-color: #00000030;
+  }
+  
+  .delete-modal-wrapper {
+    display: none;
+    z-index: 2;
+    flex-direction: column;
     align-items: center;
-    justify-content: right;
-    gap: 20px;
-}
-
-.tableMenuOption {
+    justify-content: center;
+    position: absolute;
+    width: 700px;
+    height: 250px;
+    border-radius: 50px;
+    background-color: #00000070;
+    backdrop-filter: blur(5px);
+    box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  .delete-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-title-text {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
+    color: white;
+    font-size: 1.7rem;
+  }
+  
+  .delete-row {
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .input-wrapper {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+  }
+  
+  .input-title-text {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: white;
     font-size: 1.4rem;
     font-weight: 400;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.tableMenuOption:hover {
+  }
+  
+  .input-box {
     color: #FFCDB1;
-}
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 2px;
+    border-color: white;
+    transition: 1s;
+  }
+  
+  .delete-row-buttons {
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .input-button {
+    border: 0;
+    background-color: transparent;
+    font-family: 'Glory', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .input-button:is(:hover, :focus) {
+    color: rgb(70, 171, 253);
+  }
+  

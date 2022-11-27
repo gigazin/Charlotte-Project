@@ -45,7 +45,7 @@
                 <li class="menuItems"><a href="#" class="color" id="menuText">Menu</a></li>
                 <li class="menuItems"><a href="./coordinators-table.php" target="_self" class="color">Coordenadores</a></li>
                 <li class="menuItems"><a href="./delivery-table.php" target="_self" class="color">Entregadores</a></li>
-                <li class="menuItems"><a href="../../../api/index.php" target="_self"
+                <li class="menuItems"><a href="/index.php" target="_self"
                 class="color">Sair</a></li>
             </ul>
         </nav>
