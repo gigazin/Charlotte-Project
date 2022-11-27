@@ -17,21 +17,17 @@
 ## 📷 Página de Login
 
 <p align="center">
-  <img alt="Visualização da tela de login" src="https://lh3.googleusercontent.com/pw/AL9nZEVAIh1VIDW5croQuCiJUA-TXIGklSmyxddt-E70RaT9Or1PmkYKqash_bm0uqVb9P80zmmmh8eM-tPhGSjlb2Ykt-JUhwRtN46K-oxH2LFfAev_yNHPQwyq2q2JaqlFToUclOkEIVArb7LUhAf3OEg=w1278-h713-no?authuser=0" width="100%">
+  <img alt="Visualização da tela de login" src="./View/public/img/login_page.png" width="100%">
 </p>
 
 <br>
 
-
-## 📷 Página de Registro
-
----------- EM ANDAMENTO ----------
-<br>
-
-
 ## 📷 Área do Administrador
 
----------- EM ANDAMENTO ----------
+<p align="center">
+  <img alt="Visualização da area do administrador" src="./View/public/img/adm_page.png" width="100%">
+</p>
+
 <br>
 
 
@@ -49,6 +45,7 @@ Projeto de gerenciamento de entregadores com o intuito de ajudar na dificuldade 
   - PHP
   - HTML 
   - CSS
+  - JAVA
   
 <br>
 
