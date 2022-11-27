@@ -70,7 +70,7 @@
                 </button>
               </div>
               <div class="admin-info">
-                <button class="admin-info-button" onclick="openCoordinatorRegisterModal()">
+                <button id="btnNewCoord" class="admin-info-button" onclick="openCoordinatorRegisterModal()">
                   <h3 class="admin-info-element">Novo Coordenador</h3>
                 </button>
               </div>
@@ -204,6 +204,7 @@
                     name="nome"
                     placeholder="Informe o nome..."
                     class="input-box"
+                    id="name-coord"
                   />
                 </div>
                 <div class="input-wrapper">
@@ -215,6 +216,7 @@
                     name="cpf"
                     placeholder="Informe o CPF..."
                     class="input-box"
+                    id="cpf-coord"
                   />
                 </div>
                 <div class="input-wrapper">
@@ -226,6 +228,7 @@
                     name="cidade"
                     placeholder="Informe a cidade..."
                     class="input-box"
+                    id="city-coord"
                   />
                 </div>
               </div>
@@ -236,6 +239,7 @@
                       name="btnCadastrarCoord"
                       value="Cadastrar"
                       class="input-button"
+                    id="submit-coord"
                     />
                   </div>
                   <div class="input-wrapper">

@@ -1,43 +1,6 @@
 <?php
-//precisa do controller para chamar os métodos
 include_once("./Controller/administradorController.php");
 ?>
-
-<!-- HTML DO SITE -->
-<!-- <h1>CADASTRO DE ADMINISTRADOR DO SISTEMA</h1>
-<form method="post">
-    Nome: <input type="text" name="nome" id=""><br><br>
-    Login: <input type="text" name="login" id=""><br><br>
-    Senha: <input type="text" name="senha" id=""><br><br>
-    <input type="submit" class="button" name="btnCadastrarAdm" value="CADASTRAR ADMINISTRADOR">
-    <hr>
-</form>
-
-
-<h1>REALIZAR LOGIN</h1>
-<form method="post">
-    Login: <input type="text" name="login" id=""><br><br>
-    Senha: <input type="text" name="senha" id=""><br><br>
-    <input type="submit" class="button" name="btnLogin" value="LOGAR">
-</form>
-<hr>
-<h1>ATUALIZAR DADOS ADMIN</h1>
-
-<form method="post">
-    ID do Admin: <input type="text" name="id" id=""><br><br>
-    Novo Login: <input type="text" name="login" id=""><br><br>
-    Nova Senha: <input type="text" name="senha" id=""><br><br>
-    <input type="submit" class="button" name="btnAtualizarDados" value="ATUALIZAR DADOS">
-</form>
-<hr>
-<h1>DELETAR UM ADMIN</h1>
-<form method="post">
-    ID do Admin: <input type="text" name="id" id=""><br><br>
-    <input type="submit" class="button" name="btnDeletarAdmin" value="DELETAR ADMIN">
-</form>
-<hr>
--->
-
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -94,6 +57,7 @@ include_once("./Controller/administradorController.php");
               <input
                 type="text"
                 name="usuario"
+                id="username"
                 placeholder="Insira seu nome de usuário..."
                 class="inputBox"
               />
@@ -101,6 +65,7 @@ include_once("./Controller/administradorController.php");
               <input
                 type="password"
                 name="senha"
+                id="password"
                 placeholder="Insira sua senha..."
                 class="inputBox"
               />
@@ -112,10 +77,7 @@ include_once("./Controller/administradorController.php");
   </body>
 </html>
 
-
-
 <!-- HTML DO SITE -->
-
 
 <?php
 
@@ -126,21 +88,6 @@ function realizarLogin()
     $situacao = login($login, $senha);
     echo $situacao;
 }
-
-
-
-// function atualizarDadosAdmin()
-// {
-//     $login = $_POST['login'];
-//     $senha = $_POST['senha'];
-//     $id = $_POST['id'];
-//     $situacao = atualizarAdministrador($login, $senha, $id);
-//     echo $situacao;
-// }
-
-
-//verifica qual botão foi clicado e chama a função correta
-
 
 if (array_key_exists('btnLogin', $_POST)) {
     realizarLogin();

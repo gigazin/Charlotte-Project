@@ -91,7 +91,7 @@ function excluirCoordenador()
         </div>
         <div class="buttonWrapper">
             <div class="tableButtons">
-                <button class="del-button" onclick="openDeleteModal()">Deletar</button>
+                <button id="btnDelCoord" class="del-button" onclick="openDeleteModal()">Deletar</button>
             </div>
         </div>
         
@@ -115,6 +115,7 @@ function excluirCoordenador()
                                 name="IDcoordenador"
                                 placeholder="Informe o ID..."
                                 class="input-box"
+                                id="id-del-coord"
                             />
                         </div>
                     </div>
@@ -123,7 +124,9 @@ function excluirCoordenador()
                             <input
                                 type="submit"
                                 name="btnDeletarCoordenador"
-                                value="Deletar"      class="input-button"
+                                value="Deletar"      
+                                class="input-button"
+                                id="btn-del-coord"
                                 />
                             </div>
                             <div class="input-wrapper">
