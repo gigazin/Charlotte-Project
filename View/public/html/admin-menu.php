@@ -1,6 +1,8 @@
 <?php
 
   include_once('../../../Controller/entregadorController.php');
+  include_once('../../../Controller/coordenadorController.php');
+  include_once('../../../Controller/administradorController.php');
 ?>
 
 <!DOCTYPE html>
@@ -210,7 +212,7 @@
                   </div>
                   <input
                     type="text"
-                    name="CPF"
+                    name="cpf"
                     placeholder="Informe o CPF..."
                     class="input-box"
                   />
@@ -257,7 +259,7 @@
                   </div>
                   <input
                     type="password"
-                    name="senha"
+                    name="novaSenha"
                     placeholder="Informe uma senha..."
                     class="input-box"
                   />
@@ -268,7 +270,7 @@
                   </div>
                   <input
                     type="password"
-                    name="senha"
+                    name="confirmarSenha"
                     placeholder="Confirme sua senha..."
                     class="input-box"
                   />
@@ -277,8 +279,8 @@
               <div class="edit-row-buttons">
                 <div class="input-wrapper">
                   <input
-                    type="button"
-                    name="Cadastrar"
+                    type="submit"
+                    name="btnEditarAdm"
                     value="Confirmar"
                     class="input-button"
                   />
@@ -299,10 +301,14 @@
     cadastrarEntregador();
   }
 
-
   if(array_key_exists('btnCadastrarCoord', $_POST)){
     cadastrarCoordenador();
   }
+
+  if(array_key_exists('btnEditarAdm',$_POST)){
+    editarSenha();
+  }
+  
   
   function cadastrarEntregador(){
     $fields = "nome,turno,cidade,veiculo,bonificacao,salario,coordenador_idcoordenador";
@@ -312,7 +318,8 @@
     $veiculo = $_POST['veiculo'];
     $bonificacao = $_POST['bonificacao'];
     $coordenador_idcoordenador = $_POST['coordenador_idcoordenador'];
-    inserirEntregador($fields,$nome,$turno,$cidade,$veiculo,$bonificacao,2000.0,$coordenador_idcoordenador);
+    $situacao = inserirEntregador($fields,$nome,$turno,$cidade,$veiculo,$bonificacao,2000.0,$coordenador_idcoordenador);
+    echo $situacao;
   }
 
   function cadastrarCoordenador(){
@@ -320,7 +327,15 @@
     $nome = $_POST['nome'];
     $cidade = $_POST['cidade'];
     $cpf = $_POST['cpf'];
+    inserirCoordenador($fields,$nome,$cidade,$cpf);
+  }
 
+  function editarSenha(){
+   
+    $novaSenha = $_POST['novaSenha'];
+    $confirmarSenha = $_POST['confirmarSenha'];
+    $id = 1;
+    atualizarSenhaAdministrador($novaSenha,$confirmarSenha,$id);
   }
 
 ?>

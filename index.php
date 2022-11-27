@@ -1,6 +1,6 @@
 <?php
 //precisa do controller para chamar os métodos
-include_once("../Controller/administradorController.php");
+include_once("./Controller/administradorController.php");
 ?>
 
 <!-- HTML DO SITE -->

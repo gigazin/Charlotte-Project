@@ -15,3 +15,14 @@ function listarCoordenadorID($id)
     $arr = $coordenadorDAO->load($fields, $add);
     return $arr;
 }
+
+function inserirCoordenador($fields, $nome, $cidade, $cpf)
+{
+    if($nome == "" || $cidade == "" || $cpf == ""){
+        return "Inválido";
+    }
+    $coordenadorDAO = new coordenadorDAO();
+    $params = array($nome, $cidade, $cpf);
+    $coordenadorDAO->insert($fields, $params);
+    //header("Location: View/index.php");
+}

@@ -5,6 +5,9 @@ include_once("../../../DAO/entregadorDAO.php");
 
 function inserirEntregador($fields, $nome, $turno, $cidade, $veiculo, $bonificacao,$salario, $coordenador_idcoordenador)
 {
+    if($nome == "" || $turno == "" || $cidade == ""  || $veiculo ==  "" || $bonificacao == "" || $salario == "" || $coordenador_idcoordenador == ""){
+        return "Inválido";
+    }
     $entregadorDAO = new entregadorDAO();
     $params = array($nome, $turno, $cidade, $veiculo, $bonificacao, $salario, $coordenador_idcoordenador);
     $entregadorDAO->insert($fields, $params);
