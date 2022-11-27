@@ -1,14 +1,14 @@
 <?php
-include_once("../DAO/entregadorDAO.php");
+include_once("../../../DAO/entregadorDAO.php");
 
 //funcao intermediaria entre a view e o DAO para inserir o usuario, aqui deve ficar as regras de validacao (se for nulo, se ja existe, etc)
 
-function inserirEntregador($fields, $nome, $login, $senha)
+function inserirEntregador($fields, $nome, $turno, $cidade, $veiculo, $bonificacao,$salario, $coordenador_idcoordenador)
 {
     $entregadorDAO = new entregadorDAO();
-    $params = array($nome, $login, $senha);
+    $params = array($nome, $turno, $cidade, $veiculo, $bonificacao, $salario, $coordenador_idcoordenador);
     $entregadorDAO->insert($fields, $params);
-    header("Location: View/index.php");
+    //header("Location: View/index.php");
 }
 
 
@@ -29,6 +29,4 @@ function listarEntregadorID($id)
     return $arr;
 }
 
-function cadastrarEntregador() {
-    
-}
+

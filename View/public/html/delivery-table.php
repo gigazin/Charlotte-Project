@@ -1,9 +1,11 @@
-<!--
+
 <?php
-// include_once("../../../Controller/entregadorController.php");
+include_once("../../../Controller/entregadorController.php");
+include_once("../../../Controller/coordenadorController.php");
+
 
 ?>
--->
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -58,28 +60,39 @@
                             <h3 id="shiftHeader">Turno</h3>
                             <h3 id="cityHeader">Cidade</h3>
                             <h3 id="vehicleHeader">Veículo</h3>
-                            <h3 id="bonusHeader">Bonificação</h3>
                             <h3 id="wageHeader">Salário</h3>
+                            <h3 id="coordinatorHeader">Coordenador</h3>
+                            
                         </d>
                     </thead>
                     <tbody>
-                        <!--  <?php 
-                            // $dados = listarCoordenador();
-                            // $array = [];
-                            // foreach($dados as $key => $row){
-                                // $nome = $row->getNome();
-                                // $cpf = $row->getCpf();
-                                // $cidade = $row->getCidade();
-                                // $array[] = 
+
+                   
+                        <?php 
+                             $dados = listarEntregadores();
+                             $array = [];
+                             foreach($dados as $key => $row){
+                             $nome = $row->getNome();
+                             $veiculo = $row->getVeiculo();
+                             $turno = $row->getTurno();
+                             $salario = $row->getSalario();                  
+                             $result = listarCoordenadorID($row->getIdCoordenador());
+                             $IdCoordenador = $result[0]->getNome();
+                             $cidade = $row->getCidade();
+                                $array[] = 
                                     "<tr class='tableCells'>
                                     <td id='nameCell'>$nome</td>
-                                    <td id='CPFCell'>$cpf</td>
+                                    <td id='shiftCell'>$turno</td>
                                     <td id='cityCell'>$cidade</td>
+                                    <td id='vehicleCell'>$veiculo</td>
+                                    <td id='wageCell'>$salario</td>
+                                    <td id='coordinatorCell'>$IdCoordenador</td>
                                     </tr>"
-                                // ;
-                                // echo $array[$key];
-                            // }
-                        ?> -->
+                                 ;
+                                 echo $array[$key];
+                        
+                         }
+                        ?> 
                     </tbody>
                 </table>
             </div>

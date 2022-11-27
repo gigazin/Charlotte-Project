@@ -1,3 +1,8 @@
+<?php
+
+  include_once('../../../Controller/entregadorController.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -128,17 +133,45 @@
                   </div>
                   <input 
                     type="text"
-                    name="turno"
+                    name="veiculo"
                     placeholder="Informe o veículo..."
                     class="input-box"
                     />
                 </div>
               </div>
+              <div class="register-row">
+                <div class="input-wrapper">
+                  <div class="input-title">
+                    <h3 class="input-title-text">
+                        Bonificação
+                    </h3>
+                  </div>
+                  <input 
+                  type="text"
+                  name="bonificacao"
+                  placeholder="Informe a bonificação..."
+                  class="input-box"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <div class="input-title">
+                    <h3 class="input-title-text">
+                        ID Coordenador
+                    </h3>
+                  </div>
+                  <input 
+                  type="text"
+                  name="coordenador_idcoordenador"
+                  placeholder="Informe o ID do coordenador..."
+                  class="input-box"
+                  />
+                </div>
+              </div>
               <div class="register-row-buttons">
                   <div class="input-wrapper">
                     <input
-                      type="button"
-                      name="btnCadastrar"
+                      type="submit"
+                      name="btnCadastrarEntre"
                       value="Cadastrar"
                       class="input-button"
                     />
@@ -197,8 +230,8 @@
               <div class="register-row-buttons">
                 <div class="input-wrapper">
                     <input
-                      type="button"
-                      name="btnCadastrar"
+                      type="submit"
+                      name="btnCadastrarCoord"
                       value="Cadastrar"
                       class="input-button"
                     />
@@ -245,7 +278,7 @@
                 <div class="input-wrapper">
                   <input
                     type="button"
-                    name="btnCadastrar"
+                    name="Cadastrar"
                     value="Confirmar"
                     class="input-button"
                   />
@@ -260,3 +293,34 @@
     </main>
   </body>
 </html>
+
+<?php 
+  if(array_key_exists('btnCadastrarEntre', $_POST)){
+    cadastrarEntregador();
+  }
+
+
+  if(array_key_exists('btnCadastrarCoord', $_POST)){
+    cadastrarCoordenador();
+  }
+  
+  function cadastrarEntregador(){
+    $fields = "nome,turno,cidade,veiculo,bonificacao,salario,coordenador_idcoordenador";
+    $nome = $_POST['nome'];
+    $cidade =$_POST['cidade'];
+    $turno = $_POST['turno'];
+    $veiculo = $_POST['veiculo'];
+    $bonificacao = $_POST['bonificacao'];
+    $coordenador_idcoordenador = $_POST['coordenador_idcoordenador'];
+    inserirEntregador($fields,$nome,$turno,$cidade,$veiculo,$bonificacao,2000.0,$coordenador_idcoordenador);
+  }
+
+  function cadastrarCoordenador(){
+    $fields = "nome,cidade,cpf";
+    $nome = $_POST['nome'];
+    $cidade = $_POST['cidade'];
+    $cpf = $_POST['cpf'];
+
+  }
+
+?>

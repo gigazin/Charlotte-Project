@@ -1,6 +1,6 @@
 <?php
-include_once("../Model/entregadorModel.php");
-require_once("../Database/database.php");
+include_once("../../../Model/entregadorModel.php");
+require_once("../../../Database/database.php");
 
 class entregadorDAO extends database
 {

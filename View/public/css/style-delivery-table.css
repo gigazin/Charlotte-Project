@@ -108,7 +108,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 7%;
-  width: 1100px;
+  width: 1300px;
   height: 565px;
   background-color: #1d1d1d50;
   border-radius: 50px;
@@ -131,7 +131,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   height: 420px;
-  width: 1000px;
+  width: 1100px;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -155,28 +155,30 @@ body {
 }
 
 #nameHeader {
-  margin-left: 210px;
+  margin-left: 260px;
 }
   
 #shiftHeader {
-  margin-left: 545px;
+  margin-left: 595px;
 }
   
 #cityHeader {
-  margin-left: 860px;
+  margin-left: 900px;
 }
   
 #vehicleHeader {
-  margin-left: 1185px;
-}
-  
-#bonusHeader {
-  margin-left: 1490px;
+  margin-left: 1235px;
 }
   
 #wageHeader {
-  margin-left: 1842px;
+  margin-left: 1550px;
 }
+  
+#coordinatorHeader {
+  margin-left: 1952px;
+}
+
+
 
 .tableCells {
   gap: 20px;
@@ -205,7 +207,7 @@ body {
   gap: 20px;
 }
 
-#nameCell {
+#nameCell, #coordinatorCell {
   width: 200px;
   height: 44px;
 }
@@ -225,10 +227,12 @@ body {
   height: 44px;
 }
 
-#bonusCell, #wageCell {
+#wageCell {
   width: 150px;
   height: 44px;
 }
+
+
 
 
 .tableButtons {

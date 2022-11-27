@@ -7,3 +7,11 @@ function listarCoordenador()
     return $arr;
 }
 
+function listarCoordenadorID($id)
+{
+    $coordenadorDAO = new coordenadorDAO();
+    $fields = "id,nome";
+    $add = "WHERE id = ".$id.";";
+    $arr = $coordenadorDAO->load($fields, $add);
+    return $arr;
+}

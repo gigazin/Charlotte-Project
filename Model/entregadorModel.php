@@ -21,16 +21,15 @@ class entregador{
     //alterar para atributos do entregador
 	
 	/*Variaveis privadas que receberao os dados*/
-	private $id = 0;
-	private $nome = "";
-	private $cidade = "";
-	private $cpf = "";
-	private $IdCoordenador = 0;
-	private $salario = 0.0;
-	private $bonificacao = 0.0;
-	private $turno = "";
-	private $veiculo = "";
-	private $entregas = 0;
+	private $id;
+	private $nome ;
+	private $cidade;
+	private $coordenador_idcoordenador;
+	private $salario;
+	private $bonificacao;
+	private $turno;
+	private $veiculo;
+	private $entregas;
 
 	/*Metodos get e set que trazem o conteudo da variavel privada desejada*/
 	public function getId(){
@@ -53,19 +52,9 @@ class entregador{
 	public function setCidade($cidade){
 		$this->cidade = $cidade;
 	}
-	
-	public function getCpf(){
-		return $this->cpf;
-	}
-	public function setCpf($cpf){
-		$this->$cpf = $cpf;
-	}
 
 	public function getIdCoordenador(){
-		return $this->IdCoordenador;
-	}
-	public function setIdCoordenador($IdCoordenador){
-		$this->IdCoordenador = $IdCoordenador;
+		return $this->coordenador_idcoordenador;
 	}
 
 	public function getSalario(){
